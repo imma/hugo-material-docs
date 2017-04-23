@@ -70,6 +70,8 @@
     {{ end }}
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/modernizr"></script>
+    <script src="https://unpkg.com/highlight"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     {{ with .RSSLink }}
     <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
